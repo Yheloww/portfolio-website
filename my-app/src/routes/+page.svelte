@@ -40,12 +40,10 @@
 <div class="process">
     <div>
         <h1 class="very-big">process</h1>
-        <svg width="1289" height="22" viewBox="0 0 1289 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1278 21.5C1283.8 21.5 1288.5 16.799 1288.5 11C1288.5 5.20101 1283.8 0.5 1278 0.5V21.5ZM0 21.5H1278V0.5H0V21.5Z" fill="#FFF176"/>
-            </svg>
-            
+        <svg width="100%" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1278 21.5H1288.5V0.5H1278V21.5ZM0 21.5H1278V0.5H0V21.5Z" fill="#FFF176"/>
+            </svg>            
     </div>   
-    
     <div class="cards">
         <div class="card"></div>
         <div class="card"></div>
@@ -54,6 +52,8 @@
     </div>
 </div>
 
+<footer class="footer">
+</footer>
 
 
 <style>
@@ -163,8 +163,15 @@
     }
     .card {
         width:100%;
-        height: 25vh;
+        height: 40vh;
         background-color: var(--grey-color);
         flex-basis: 25%;
+        border-radius: 20px;
+    }
+
+    footer {
+        height: 150px;
+        width: 100%;
+        background-color: var(--grey-color);
     }
 </style>
