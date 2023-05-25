@@ -20,19 +20,19 @@
             <svg width="64" height="64" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg" class="bullet">
                 <circle cx="61" cy="61" r="50" fill="#FFF176"/>
             </svg>
-            <p class="text-big">Projects</p>
+            <a href="/projects" class="text-big">Projects</a>
         </li>
         <li>
             <svg width="64" height="64" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg" class="bullet">
                 <circle cx="61" cy="61" r="50" fill="#FFF176"/>
             </svg>
-            <p class="text-big">Dashboards</p>
+            <a href="/projects" class="text-big">Dashboard</a>
         </li>
         <li>
             <svg width="64" height="64" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg" class="bullet">
                 <circle cx="61" cy="61" r="50" fill="#FFF176"/>
             </svg>
-            <p class="text-big">Visuals</p>
+            <a href="/projects" class="text-big">visuals</a>
         </li>
     </ul>
 </div>
@@ -106,6 +106,16 @@
         font-style: bold;
         width: 100%;
         
+    }
+
+    .text-big {
+        text-decoration: none;
+        color: black;
+    }
+
+    li:hover {
+        transform: translateY(-10px);
+        transition: transform 0.5s ease;
     }
 
     ul {
