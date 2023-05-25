@@ -1,2 +1,170 @@
 
-<h1> Welcome on my site !</h1>
+<div class="principal-section">
+    <h1 class="titre principal">Hi I'm <span class="yellow-text">Héloïse</span> Feldmann</h1>
+    <p class="sous-titre principal">I'm a junior data 
+        <span class="yellow-text">analyst</span>
+         who likes to create beautiful,<br class="break">
+         <span class="yellow-text">interactive</span> 
+         and thorough stories with 
+         <span class="yellow-text">datas</span>
+    </p>
+        <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg" class="round">
+            <circle cx="61" cy="61" r="61" fill="#FFF176"/>
+            <path  class="fleche" d="M58.1115 103.786C59.654 105.368 62.1864 105.4 63.7679 103.857L89.54 78.7215C91.1215 77.179 91.1531 74.6466 89.6107 73.0651C88.0682 71.4836 85.5358 71.4519 83.9543 72.9944L61.0458 95.3372L38.703 72.4287C37.1605 70.8472 34.628 70.8156 33.0465 72.358C31.465 73.9005 31.4334 76.4329 32.9758 78.0144L58.1115 103.786ZM58.0003 18.95L56.9754 100.944L64.9748 101.044L65.9997 19.05L58.0003 18.95Z" fill="#515151"/>
+        </svg>
+    </div>
+
+<div class="projects-type">
+    <ul>
+        <li>
+            <svg width="64" height="64" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg" class="bullet">
+                <circle cx="61" cy="61" r="50" fill="#FFF176"/>
+            </svg>
+            <p class="text-big">Projects</p>
+        </li>
+        <li>
+            <svg width="64" height="64" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg" class="bullet">
+                <circle cx="61" cy="61" r="50" fill="#FFF176"/>
+            </svg>
+            <p class="text-big">Dashboards</p>
+        </li>
+        <li>
+            <svg width="64" height="64" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg" class="bullet">
+                <circle cx="61" cy="61" r="50" fill="#FFF176"/>
+            </svg>
+            <p class="text-big">Visuals</p>
+        </li>
+    </ul>
+</div>
+
+<div class="process">
+    <div>
+        <h1 class="very-big">process</h1>
+        <svg width="1289" height="22" viewBox="0 0 1289 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1278 21.5C1283.8 21.5 1288.5 16.799 1288.5 11C1288.5 5.20101 1283.8 0.5 1278 0.5V21.5ZM0 21.5H1278V0.5H0V21.5Z" fill="#FFF176"/>
+            </svg>
+            
+    </div>   
+    
+    <div class="cards">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+</div>
+
+
+
+<style>
+
+    .principal-section {
+        margin-top: 0%;
+        min-height: 75vh;
+        background-color: var(--grey-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 4rem;
+        width: 100%;
+        overflow: hidden;
+    }
+    .principal {
+        margin-left: 15%;
+        color: white;
+        font-family: 'Assistant', sans-serif;
+        margin-right: 10%;
+    }
+
+    .titre {
+        font-size: 64px;
+    }
+
+    .sous-titre {
+        font-size: 40px;
+    }
+    .yellow-text {
+        background-color: var(--text-yellow);
+        color: var(--grey-color);
+        border-radius: 10px;  
+    }
+
+    .round {
+        margin-left: 15%;
+        margin-top: 2.5%;
+    }
+
+    .fleche {
+        animation: haut-bas 2s infinite linear;
+    }
+
+    .projects-type {
+        display: flex;
+        font-family: 'Assistant', sans-serif;
+        font-size:40px;
+        text-transform: uppercase;
+        font-style: bold;
+        width: 100%;
+        
+    }
+
+    ul {
+        display: flex;
+        align-items: start;
+        justify-content: space-evenly;
+        width: 100%;
+        list-style: none;
+    }
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    @keyframes haut-bas {
+        0% {
+            transform: translateY(-5px);
+        }
+        25% {
+            transform: translateY(0px)
+        }
+        50% {
+            transform: translateY(5px);
+        }
+        75% {
+            transform: translateY(0px);
+        }
+        100% {
+            transform: translateY(-5px);
+        }
+    }
+
+    :global(.very-big) {
+        font-size: 100px;
+        font-family: 'Assistant', sans-serif;
+        text-transform: uppercase;
+        margin-block: 0em;
+    }
+
+    .process {
+        margin-left: 5%;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        padding: 5%;
+        gap: 5%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card {
+        width:100%;
+        height: 25vh;
+        background-color: var(--grey-color);
+        flex-basis: 25%;
+    }
+</style>
