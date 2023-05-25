@@ -195,6 +195,11 @@
         justify-content: space-between;
         align-items: center;
     }
+    .card.show {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
     .card {
         width:100%;
         height: 40vh;
@@ -205,10 +210,7 @@
         transition: 150ms;
     }
 
-    .card.show {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  
 
 
     footer {
