@@ -1,3 +1,25 @@
+<script>
+    import { fade, fly } from "svelte/transition";
+    import { onMount } from "svelte";
+
+    onMount(()=> {
+        const cards = document.querySelectorAll(".card")
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle("show", entry.isIntersecting)
+            })
+        }, {
+            threshold:1,
+        })
+
+    cards.forEach(card => {
+            observer.observe(card)
+        })
+
+    })
+
+</script>
 
 <div class="principal-section">
     <h1 class="titre principal">Hi I'm <span class="yellow-text">Héloïse</span> Feldmann</h1>
@@ -37,13 +59,14 @@
     </ul>
 </div>
 
-<div class="process">
-    <div>
+<div class="process" >
+    <div transition:fade>
         <h1 class="very-big">process</h1>
         <svg width="100%" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1278 21.5H1288.5V0.5H1278V21.5ZM0 21.5H1278V0.5H0V21.5Z" fill="#FFF176"/>
             </svg>            
-    </div>   
+    </div> 
+
     <div class="cards">
         <div class="card"></div>
         <div class="card"></div>
@@ -105,6 +128,7 @@
         text-transform: uppercase;
         font-style: bold;
         width: 100%;
+        margin-top: 10%;
         
     }
 
@@ -177,7 +201,15 @@
         background-color: var(--grey-color);
         flex-basis: 25%;
         border-radius: 20px;
+        opacity: 0;
+        transition: 150ms;
     }
+
+    .card.show {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
 
     footer {
         height: 150px;
