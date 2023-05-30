@@ -68,10 +68,10 @@
     </div> 
 
     <div class="cards">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+        <div class="card show"><p>Hello</p></div>
+        <div class="card show"><p>Hello</p></div>
+        <div class="card show"><p>Hello</p></div>
+        <div class="card show"><p>Hello</p></div>
     </div>
 </div>
 
@@ -83,7 +83,7 @@
 
     .principal-section {
         margin-top: 0%;
-        min-height: 75vh;
+        min-height: 80vh;
         background-color: var(--grey-color);
         display: flex;
         flex-direction: column;
@@ -128,7 +128,8 @@
         text-transform: uppercase;
         font-style: bold;
         width: 100%;
-        margin-top: 10%;
+        margin-top: 5%;
+        margin-bottom: 5%;
         
     }
 
@@ -173,7 +174,7 @@
         }
     }
 
-    :global(.very-big) {
+    .very-big {
         font-size: 100px;
         font-family: 'Assistant', sans-serif;
         text-transform: uppercase;
@@ -196,10 +197,10 @@
         align-items: center;
     }
     .card.show {
-        transform: translateX(0);
-        opacity: 1;
+        color : wheat;
+        opacity: 1; 
     }
-    
+
     .card {
         width:100%;
         height: 40vh;
@@ -207,7 +208,15 @@
         flex-basis: 25%;
         border-radius: 20px;
         opacity: 0;
-        transition: 150ms;
+    }
+
+    @keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
     }
 
   
