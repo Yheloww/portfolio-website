@@ -89,7 +89,7 @@
 
 <style>
     .wrapper {
-    max-width: 50rem;
+    max-width: 60rem;
     margin-inline: auto;
     }
 
@@ -138,7 +138,7 @@
     }
 
     .round {
-        width: max(10vw, 5vw);
+        width: max(10%, 5vw);
     }
 
 
