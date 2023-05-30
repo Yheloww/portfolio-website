@@ -51,13 +51,13 @@
 	{:else}
 	<ul class="big-links flex">
 		<li>
-			<a href="/">home</a>
+			<a href="./">home</a>
 		</li>
 		<li>
-			<a href="/projects">porfolio</a>
+			<a href="./projects">porfolio</a>
 		</li>
 		<li>
-			<a href="/contact">about me</a>
+			<a href="./contact">about me</a>
 		</li>
 	</ul>
 	{/if}
