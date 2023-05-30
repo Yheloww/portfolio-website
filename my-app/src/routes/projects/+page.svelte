@@ -54,6 +54,7 @@ img {
     font-size: 64px;
     font-family: 'Assistant', sans-serif;
     text-transform: uppercase;
+    margin-block: 0rem;
 }
 
 @media (min-width: 600px) {
