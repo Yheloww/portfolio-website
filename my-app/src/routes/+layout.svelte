@@ -78,10 +78,15 @@
 		font-family: 'Assistant', sans-serif;
 		align-items: center;
 		justify-content: space-between;
+		padding: 1rem;
 	}
 
 	.logo a {
 		margin: 2rem;
+		text-decoration: none;
+		color: var(--text-yellow);
+		font-size: 2rem;
+		margin-block: 0rem;
 	}
 
 	.big-links {
@@ -125,7 +130,6 @@
 	
 	.menu {
 		z-index: 100;
-		padding: 1rem;
 	}
 
 </style>
