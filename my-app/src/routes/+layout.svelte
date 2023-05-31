@@ -82,6 +82,7 @@
 		--grey-color: #3E3E3E;
 		--blue-color: #6D9BB3;
 		--light-blue: #8FD9FF;
+		--white-color: #ffff;
 	}
 
 	nav {

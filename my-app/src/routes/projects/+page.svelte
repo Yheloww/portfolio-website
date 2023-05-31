@@ -83,6 +83,8 @@ h1 {
     border-radius: 3rem;
     padding: 2rem;
     gap:2rem;
+    box-shadow: 0.2rem 0.2rem  0.4rem var(--grey-color);   
+
 }
 
 .cards {
