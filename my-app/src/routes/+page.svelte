@@ -212,7 +212,6 @@
         color : wheat;
         opacity: 1;
         transition: all 1s ease; 
-        transform: translateX(0%);
     }
 
     .card {
@@ -220,7 +219,6 @@
         background-color: var(--grey-color);
         border-radius: 20px;
         opacity: 0;
-        transform: translateX(100%);
         box-shadow: 0.2rem 0.2rem  0.4rem var(--grey-color);   
 
     }

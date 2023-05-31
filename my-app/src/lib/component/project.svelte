@@ -1,8 +1,30 @@
 
+<script>
+    import Project from "../../lib/component/project.svelte";
+    import { fade, fly } from "svelte/transition";
+    import { onMount } from "svelte";
 
+    onMount(()=> {
+        const cards = document.querySelectorAll(".card")
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                entry.target.classList.add("show", entry.isIntersecting)
+            })
+        }, {
+            threshold:1,
+        })
+
+    cards.forEach(card => {
+            observer.observe(card)
+        })
+
+    })
+
+</script>
 
 <div class="wrapper">
-    <div class="project">
+    <div class="card show">
         <div class="image">
             <img src="https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F220818142713-dogs-tears-emotions-wellness-stock.jpg" alt="corgi" >
         </div>
@@ -32,7 +54,7 @@ h1 {
 .image img {
     width: 100%;
     height: 100%;
-    border-radius: 3rem;
+    border-radius: 1rem;
 }
 
 img {
@@ -40,12 +62,25 @@ img {
     object-fit: cover;
 }
 
-.project {
+.card {
     max-width: 60rem;
     display: grid;
     margin-inline: 2rem;
     font-family: 'Assistant', sans-serif;
-    margin-block: 5rem;
+    margin-block: 2rem;
+    border : 0.5px solid #bcbcbc;
+    border-radius: 1rem;
+    padding:2rem;
+    opacity: 0;
+}
+.card.show {
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+
+.card:hover {
+    background-color: #dddddd;
 }
 
 .text {
@@ -55,10 +90,10 @@ img {
 }
 
 @media (min-width: 600px) {
-    .project{
+    .card{
         grid-template-columns: 1fr 1fr;
         gap: 4rem;
-        margin-block: 10rem;
+        margin-block: 5rem;
     }
 }
 
