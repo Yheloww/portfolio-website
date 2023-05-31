@@ -32,7 +32,7 @@
                      <span class="yellow-text">datas</span>
                 </p>
                     <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg" class="round">
-                        <circle cx="61" cy="61" r="61" fill="#FFF176"/>
+                        <circle  class="fleche-cli" cx="61" cy="61" r="61" fill="#FFF176"/>
                         <path  class="fleche" d="M58.1115 103.786C59.654 105.368 62.1864 105.4 63.7679 103.857L89.54 78.7215C91.1215 77.179 91.1531 74.6466 89.6107 73.0651C88.0682 71.4836 85.5358 71.4519 83.9543 72.9944L61.0458 95.3372L38.703 72.4287C37.1605 70.8472 34.628 70.8156 33.0465 72.358C31.465 73.9005 31.4334 76.4329 32.9758 78.0144L58.1115 103.786ZM58.0003 18.95L56.9754 100.944L64.9748 101.044L65.9997 19.05L58.0003 18.95Z" fill="#515151"/>
                     </svg>
         </div>
@@ -101,6 +101,8 @@
         overflow: hidden;
         color: white;
         font-family: 'Assistant', sans-serif;
+        box-shadow: 0.2rem 0.2rem  0.4rem var(--grey-color);   
+
     }
 
     .titre {
@@ -164,6 +166,7 @@
         padding: 0.5rem;
         border-radius: 100vw;
         margin-block: 0.5rem;
+        box-shadow: 0.2rem 0.2rem  0.4rem var(--grey-color);   
     }
 
 
@@ -218,6 +221,8 @@
         border-radius: 20px;
         opacity: 0;
         transform: translateX(100%);
+        box-shadow: 0.2rem 0.2rem  0.4rem var(--grey-color);   
+
     }
 
     @keyframes slideInFromRight {
