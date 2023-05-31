@@ -83,9 +83,6 @@
 </div>
 
 
-<footer class="footer">
-</footer>
-
 
 <style>
     .wrapper {
@@ -96,7 +93,7 @@
     .principal-section {
         margin-top: 0%;
         min-height: 80vh;
-        background-color: var(--grey-color);
+        background-color: var(--blue-color);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -210,7 +207,9 @@
     }
     .card.show {
         color : wheat;
-        opacity: 1; 
+        opacity: 1;
+        transition: all 1s ease; 
+        transform: translateX(0%);
     }
 
     .card {
@@ -218,6 +217,7 @@
         background-color: var(--grey-color);
         border-radius: 20px;
         opacity: 0;
+        transform: translateX(100%);
     }
 
     @keyframes slideInFromRight {
@@ -227,12 +227,6 @@
     100% {
         transform: translateX(0);
     }
-    }
-
-    footer {
-        height: 150px;
-        width: 100%;
-        background-color: var(--grey-color);
     }
 
 

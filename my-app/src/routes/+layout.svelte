@@ -1,6 +1,9 @@
 <script>
 	import { fly,fade } from 'svelte/transition';
+	import { page } from '$app/stores';
+	import Transition from '../lib/component/Transition.svelte'
 
+	export let data;
 	let height =0;
 	let width = 0;
 	let clicked = false;
@@ -21,7 +24,7 @@
 
 <nav class="flex">
 	<div class="logo">
-		<a href="/">H</a>
+		<a href="./">H</a>
 	</div>
 
 
@@ -38,13 +41,13 @@
 		{#if clicked}
 		<ul class="nav-links flex" transition:fly="{{ x:300, duration: 800}}" >
 			<li>
-				<a on:click={ () => clicked = !clicked} href="/">home</a>
+				<a on:click={ () => clicked = !clicked} href="./">home</a>
 			</li>
 			<li>
-				<a on:click={ () => clicked = !clicked} href="/projects">porfolio</a>
+				<a on:click={ () => clicked = !clicked} href="./projects">porfolio</a>
 			</li>
 			<li>
-				<a on:click={ () => clicked = !clicked} href="/contact">about me</a>
+				<a on:click={ () => clicked = !clicked} href="./contact">about me</a>
 			</li>
 		</ul>
 		{/if}
@@ -63,13 +66,22 @@
 	{/if}
 </nav>
 
-<slot/>
+{#key data.pathname}
+<div in:fly={{ y: -50, duration: 300, delay:350}}
+	out:fly={{ y:-50, duration: 300}}>
+    <slot/>
+</div>
+{/key}
+
+<footer class="footer">
+</footer>
 
 <style>
 	:root {
 		--text-yellow: #FFF176;
 		--grey-color: #3E3E3E;
 		--blue-color: #6D9BB3;
+		--light-blue: #8FD9FF;
 	}
 
 	nav {
@@ -114,7 +126,7 @@
 		padding: 0;
 		position: fixed;
 		inset: 0 0 0 40%;
-		background-color: hsl(0 0% 0%/ 0.5);
+		background-color: hsl(201 32% 56%/ 0.7);
 		backdrop-filter: blur(0.5rem);
 
 		flex-direction: column;
@@ -131,5 +143,12 @@
 	.menu {
 		z-index: 100;
 	}
+
+	footer {
+        height: 150px;
+        width: 100%;
+        background-color: var(--blue-color);
+		margin-top: 2rem;
+    }
 
 </style>
