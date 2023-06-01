@@ -72,7 +72,7 @@
             <h1 class="title-dash">Restaurants</h1>
             <p class="description">This power bi dashboard is meant for people to find restaurants for their next trip in Europe. It has been thought as a survey and you can explore the various aspects of it as the price range the city where you want to go, the best ranked restaurants and so on ...</p>
             <img class="image"src="./image/restaurant.png" alt="predictor">
-            <button class="site">See dashboard</button>
+            <button class="site"><a href="https://app.powerbi.com/links/q5BKyyUa-J?ctid=bf6256d9-2940-465b-bd70-1b366185f183&pbi_source=linkShare&bookmarkGuid=07f97c7e-a254-43fd-9d9f-5be34c7b0a21">See dashboard</a></button>
         </div>
         <div class="card show">
             <h1 class="title-dash">Dragonyte</h1>
@@ -93,7 +93,8 @@
     </div>
 </div>
 
-<div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+
+
 
 </div>
 
