@@ -78,7 +78,7 @@
             <h1 class="title-dash">Dragonyte</h1>
             <p class="description">This tableau dashboard is the result of a use case proposed by accenture during my becode training. It analyze the datas of Dragonyte brewery a fake clientThen we cleaned and analyze the datas to get some insights out. At the end was a presentation of our findings to accenture people.</p>
             <img class="image" src="./image/dragonite.png" alt="tableau dashboard">
-            <button class="site">See dashboard</button>
+            <button class="site"><a href="https://public.tableau.com/app/profile/h.lo.se.feldmann/viz/StoryDragonyte/Histoire1">See dashboard</a></button>
         </div>
     </div>
 </div>
@@ -115,6 +115,11 @@ h1 {
 .wrapper {
     max-width: 60rem;
     margin-inline: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .big {

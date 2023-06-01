@@ -63,24 +63,23 @@
         </ul>
     </div>
 </div>
-
-<div class="wrapper">
-    <div class="process" >
-        <div transition:fade>
-            <h1 class="very-big">process</h1>
-            <svg width="100%" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1278 21.5H1288.5V0.5H1278V21.5ZM0 21.5H1278V0.5H0V21.5Z" fill="#FFF176"/>
-                </svg>            
-        </div> 
-    
-        <div class="cards">
-            <div class="card show"><p>Hello</p></div>
-            <div class="card show"><p>Hello</p></div>
-            <div class="card show"><p>Hello</p></div>
-            <div class="card show"><p>Hello</p></div>
+<div class="border">
+    <div class="wrapper">
+        <div class="process" >
+            <div transition:fade>
+                <h1 class="very-big">process</h1>          
+            </div> 
+        
+            <div class="cards">
+                <div class="card show"><p>Hello</p></div>
+                <div class="card show"><p>Hello</p></div>
+                <div class="card show"><p>Hello</p></div>
+                <div class="card show"><p>Hello</p></div>
+            </div>
         </div>
     </div>
 </div>
+
 
 
 
@@ -88,6 +87,10 @@
     .wrapper {
     max-width: 60rem;
     margin-inline: auto;
+    }
+
+    .border {
+    border-top: 4px solid var(--text-yellow);
     }
 
     .principal-section {
@@ -144,6 +147,8 @@
     .text-big {
         text-decoration: none;
         color: black;
+        font-size: 3rem;
+        padding-right: 1rem;
     }
 
     li:hover {
@@ -205,7 +210,6 @@
     .cards {
         display: flex;
         flex-direction: column;
-        padding: 5%;
         gap: 2rem;
     }
     .card.show {
