@@ -54,7 +54,7 @@ h1 {
 }
 
 .wrapper {
-    max-width: 60rem;
+    max-width: 75rem;
     margin-inline: auto;
 }
 

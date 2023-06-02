@@ -109,6 +109,12 @@
 
 <style>
 
+.visuals {
+    background-size: cover;
+    aspect-ratio: 1/1;
+    margin-block: 1rem
+}
+
 p {
     font-size: 20px;
 }
@@ -117,6 +123,7 @@ h1 {
 }
 .media {
     display: grid;
+    margin-inline: 2rem;
 }
 
 .title {
@@ -132,7 +139,7 @@ h1 {
     margin-bottom: 4rem;
 }
 .wrapper {
-    max-width: 60rem;
+    max-width: 75rem;
     margin-inline: auto;
 }
 
