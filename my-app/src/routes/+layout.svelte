@@ -2,7 +2,7 @@
 	import { fly,fade } from 'svelte/transition';
 	import { page } from '$app/stores';
 	import Transition from '../lib/component/Transition.svelte'
-
+	import Footer from '../lib/component/Footer.svelte';
 	export let data;
 	let height =0;
 	let width = 0;
@@ -73,8 +73,7 @@
 </div>
 {/key}
 
-<footer class="footer">
-</footer>
+<Footer/>
 
 <style>
 	:root {
@@ -86,18 +85,22 @@
 	}
 
 	nav {
-		background-color: var(--blue-color);
-		color: var(--text-yellow);
+		/* background-color: var(--blue-color); */
+		color: black;
 		font-family: 'Assistant', sans-serif;
 		align-items: center;
 		justify-content: space-between;
 		padding: 1rem;
+		border: 0.5px solid #dddddd;
+		margin: 1rem;
+		border-radius: 1rem;
+		background-color: white;
 	}
 
 	.logo a {
 		margin: 2rem;
 		text-decoration: none;
-		color: var(--text-yellow);
+		color: black;
 		font-size: 2rem;
 		margin-block: 0rem;
 	}
@@ -111,7 +114,7 @@
 	}
 
 	.big-links a {
-		color: var(--text-yellow);
+		color: black;
 		text-decoration: none;
 		
 	}
@@ -127,7 +130,7 @@
 		padding: 0;
 		position: fixed;
 		inset: 0 0 0 40%;
-		background-color: hsl(201 32% 56%/ 0.7);
+		/* background-color: hsl(201 32% 56%/ 0.7); */
 		backdrop-filter: blur(0.5rem);
 
 		flex-direction: column;
@@ -136,7 +139,7 @@
 	}
 
 	.nav-links a {
-		color: var(--text-yellow);
+		color: black;
 		text-decoration: none;
 		text-transform: uppercase;
 	}
@@ -145,11 +148,9 @@
 		z-index: 100;
 	}
 
-	footer {
-        height: 150px;
-        width: 100%;
-        background-color: var(--blue-color);
-		margin-top: 2rem;
-    }
+	a:hover {
+		color: var(--text-yellow)
+	}
+
 
 </style>

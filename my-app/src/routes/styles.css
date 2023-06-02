@@ -3,7 +3,13 @@
 	padding: 0px;
 	box-sizing: border-box;
 	overflow: hidden;
+	font-family: 'Assistant', sans-serif;
+
 }
 :root {
 	--yellow : #FFF176;
 }
+
+	body {
+		background-color: #dddddd;
+	}

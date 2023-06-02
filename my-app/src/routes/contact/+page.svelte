@@ -1,11 +1,9 @@
 
+<div class="border">
 <div class="wrapper">
+    <h1 class="about very-big">ABOUT ME</h1>
     <div class="aboutme">
         <div class="texte">
-            <h1 class="about">ABOUT ME</h1>
-            <svg width="100%" height="0.5vw" fill="none" xmlns="http://www.w3.org/2000/svg" class="line">
-                <path d="M1278 21.5H1288.5V0.5H1278V21.5ZM0 21.5H1278V0.5H0V21.5Z" fill="#FFF176"/>
-                </svg>  
             <p class="description">Hello my name is Héloîse Feldmann. I am a junior data analyst, and I am currently following a bootcamp at Becode. What I like about data analysis is to create story with datas. 
                 I learned the standard skills for a data analyst, then I found some interest in data viz on the web. so I am also developping skills for front end development.
             </p>
@@ -67,21 +65,39 @@
             </ul>
         </div>
     </div>
-
-
-    <div class="contact">
-        <h1 class="about">Contact me</h1>
-        <svg width="100%" height="0.5vw" fill="none" xmlns="http://www.w3.org/2000/svg" class="line">
-            <path d="M1278 21.5H1288.5V0.5H1278V21.5ZM0 21.5H1278V0.5H0V21.5Z" fill="#FFF176"/>
-            </svg>  
-
-        <div class="form">
-          <p>Faire un formulaire pour envoyer un mail</p>
+</div>
+</div>
+<div class="border">
+<div class="wrapper">
+    <div class="wrapper">
+        <div class="contact">
+            <h1 class="about very-big">Contact me</h1>
+    
+            <div class="form">
+              <p>Faire un formulaire pour envoyer un mail</p>
+            </div>
         </div>
     </div>
 </div>
+</div>
 
 <style>
+    
+.very-big {
+    font-size: 50px;
+    font-family: 'Assistant', sans-serif;
+    text-transform: uppercase;
+    margin-block: 2rem;
+    margin-inline: 2rem;
+}
+
+.border {
+    border: 0.5px solid #dddddd;
+    margin-inline: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+    margin-bottom: 4rem;
+}
     .socials {
         display: flex;
         justify-content: center;
@@ -117,16 +133,19 @@
     display: grid;
     margin-inline: 2rem;
     font-family: 'Assistant', sans-serif;
-    margin-block: 5rem;
     gap: 2rem;
+    align-content: space-around;
+    }
+    .cards {
+        margin-block: 2rem;
     }
 
     .card {
-        background-color: var(--blue-color);
+        background-color: whitesmoke;
         padding: 2rem;
         border-radius: 2rem;
-        color: var(--white-color);
-        box-shadow: 0.2rem 0.2rem  0.4rem var(--grey-color);   
+        color: black;
+        border: 0.5px solid #dddddd;
     }
 
     ul {
@@ -149,8 +168,6 @@
         max-width: 50%;  
         object-fit: cover;
         border-radius: 100vw;
-        border: 0.5vw solid var(--text-yellow);
-        box-shadow: 0.1rem 0.1rem  0.5rem var(--grey-color);   
         margin-inline: auto;
     }
 
@@ -169,13 +186,12 @@
     .cards {
         grid-template-columns: 1fr 1fr;
         gap: 4rem;
-        margin-block: 10rem;
+        margin-block: 5rem;;
         }
 
     .aboutme{
         grid-template-columns: 1.2fr 0.8fr;
         gap: 4rem;
-        margin-block: 10rem;
         align-content: center;
         }
     .texte {

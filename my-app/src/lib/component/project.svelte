@@ -79,6 +79,7 @@ img {
     border-radius: 1rem;
     padding:2rem;
     opacity: 0;
+    background-color: whitesmoke;
 }
 .card.show {
     opacity: 1;
@@ -126,6 +127,7 @@ a {
 button:hover {
     background-color: var(--text-yellow);
     transition: all 0.5s ease;
+    border: 0.7px solid var(--text-yellow);
 }
 
 @media (min-width: 600px) {
