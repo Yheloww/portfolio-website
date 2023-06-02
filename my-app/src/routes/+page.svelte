@@ -19,6 +19,9 @@
 
     })
 
+    import { base } from "$app/paths";
+
+
 </script>
 <div class="video-wrapper">
     <video playsinline autoplay muted loop>
@@ -48,13 +51,13 @@
     <div class="projects-type">
         <ul class="project-list">
             <li>
-                <a href="/projects" class="text-big button">Projects</a>
+                <a href="{base}/projects" class="text-big button">Projects</a>
             </li>
             <li>
-                <a href="/projects" class="text-big button">Dashboard</a>
+                <a href="{base}/projects" class="text-big button">Dashboard</a>
             </li>
             <li>
-                <a href="/projects" class="text-big button">visuals</a>
+                <a href="{base}/projects" class="text-big button">visuals</a>
             </li>
         </ul>
     </div>

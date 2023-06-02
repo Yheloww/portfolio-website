@@ -7,6 +7,7 @@
 	let height =0;
 	let width = 0;
 	let clicked = false;
+	import { base } from "$app/paths";
 
 	</script>
 
@@ -24,7 +25,7 @@
 
 <nav class="flex">
 	<div class="logo">
-		<a href="./">H</a>
+		<a href="{base}/">H</a>
 	</div>
 
 
@@ -41,26 +42,26 @@
 		{#if clicked}
 		<ul class="nav-links flex" transition:fly="{{ x:300, duration: 800}}" >
 			<li>
-				<a on:click={ () => clicked = !clicked} href="./">home</a>
+				<a on:click={ () => clicked = !clicked} href="{base}/">home</a>
 			</li>
 			<li>
-				<a on:click={ () => clicked = !clicked} href="./projects">porfolio</a>
+				<a on:click={ () => clicked = !clicked} href="{base}/projects">porfolio</a>
 			</li>
 			<li>
-				<a on:click={ () => clicked = !clicked} href="./contact">about me</a>
+				<a on:click={ () => clicked = !clicked} href="{base}/contact">about me</a>
 			</li>
 		</ul>
 		{/if}
 	{:else}
 	<ul class="big-links flex">
 		<li>
-			<a href="./">home</a>
+			<a href="{base}/">home</a>
 		</li>
 		<li>
-			<a href="./projects">porfolio</a>
+			<a href="{base}/projects">porfolio</a>
 		</li>
 		<li>
-			<a href="./contact">about me</a>
+			<a href="{base}/contact">about me</a>
 		</li>
 	</ul>
 	{/if}
