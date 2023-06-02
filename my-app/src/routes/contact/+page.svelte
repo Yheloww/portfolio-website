@@ -1,4 +1,9 @@
 
+<script>
+    import From from "../../lib/component/From.svelte";
+</script>
+
+
 <div class="border">
 <div class="wrapper">
     <h1 class="about very-big">ABOUT ME</h1>
@@ -73,12 +78,14 @@
             <h1 class="about very-big">Contact me</h1>
     
             <div class="form">
-              <p>Faire un formulaire pour envoyer un mail</p>
+                <From/>
             </div>
         </div>
     </div>
 </div>
 </div>
+
+
 
 <style>
     
