@@ -24,8 +24,8 @@
 
 </script>
 <div class="video-wrapper">
-    <video playsinline autoplay muted loop>
-      <source src="./image/test.mp4" type="video/mp4">
+    <video muted playsinline autoplay loop disablepictureinpicture>
+      <source src="./test.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <div class="principal-section">
