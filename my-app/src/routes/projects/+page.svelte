@@ -61,7 +61,7 @@
 
 <div class=border>
 
-<div class="wrapper">
+<div class="wrapper"id="dashboard">
     <div class="title">
         <h1 class="big">Dashboards</h1>
     </div>
@@ -89,7 +89,7 @@
 
 <div class="wrapper">
     <div class="title">
-        <h1 class="big">Visuals</h1> 
+        <h1 class="big" id="visuals">Visuals</h1> 
         <p class="description"> This part is more artistic I recently started to document my learning of a great tool called touch designer. It is used a lot in new media art field. When I wil get a better understanding of the software, I want to merge my knowledge of data viz with this software. you can follow my journey on instagram. </p>          
         <a href="https://www.instagram.com/helow_exp_/"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px">    
             <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"/></svg>

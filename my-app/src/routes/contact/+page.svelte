@@ -9,7 +9,7 @@
     <h1 class="about very-big">ABOUT ME</h1>
     <div class="aboutme">
         <div class="texte">
-            <p class="description">Hello my name is Héloîse Feldmann. I am a junior data analyst, and I am currently following a bootcamp at Becode. What I like about data analysis is to create story with datas. 
+            <p class="description">Hello my name is Héloïse Feldmann. I am a junior data analyst, and I am currently following a bootcamp at Becode. What I like about data analysis is to create story with datas. 
                 I learned the standard skills for a data analyst, then I found some interest in data viz on the web. so I am also developping skills for front end development.
             </p>
             <div class="socials">

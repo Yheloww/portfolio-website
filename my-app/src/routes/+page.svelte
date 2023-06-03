@@ -2,22 +2,22 @@
     import { fade, fly } from "svelte/transition";
     import { onMount } from "svelte";
 
-    onMount(()=> {
-        const cards = document.querySelectorAll(".card")
+    // onMount(()=> {
+    //     const cards = document.querySelectorAll(".card")
 
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                entry.target.classList.toggle("show", entry.isIntersecting)
-            })
-        }, {
-            threshold:1,
-        })
+    //     const observer = new IntersectionObserver(entries => {
+    //         entries.forEach(entry => {
+    //             entry.target.classList.toggle("show", entry.isIntersecting)
+    //         })
+    //     }, {
+    //         threshold:1,
+    //     })
 
-    cards.forEach(card => {
-            observer.observe(card)
-        })
+    // cards.forEach(card => {
+    //         observer.observe(card)
+    //     })
 
-    })
+    // })
 
     import { base } from "$app/paths";
 
@@ -54,10 +54,10 @@
                 <a href="{base}/projects" class="text-big button">Projects</a>
             </li>
             <li>
-                <a href="{base}/projects" class="text-big button">Dashboard</a>
+                <a href="{base}/projects#dashboard" class="text-big button">Dashboard</a>
             </li>
             <li>
-                <a href="{base}/projects" class="text-big button">visuals</a>
+                <a href="{base}/projects#visuals" class="text-big button">visuals</a>
             </li>
         </ul>
     </div>
@@ -126,6 +126,7 @@ video {
   justify-content: center;
   margin-inline: 1rem;
   border-radius: 1rem;
+  z-index: -100;
 }
 
     .wrapper {
@@ -200,6 +201,7 @@ video {
         flex-direction: column;
         gap: 1rem;
         align-items: center;
+        padding-left: 0%;
     }
 
     li {

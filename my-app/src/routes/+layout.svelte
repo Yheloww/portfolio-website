@@ -32,11 +32,11 @@
 	{#if width < 500 }
 	<svg class:active={clicked} on:click={ () => clicked = !clicked} on:keypress={ () => clicked = !clicked} class="menu" width="29" height="23" viewBox="0 0 29 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 		{#if !clicked}
-		<rect width="29" height="3" rx="1.5" fill="#FFF176"/>
-		<rect y="10" width="29" height="3" rx="1.5" fill="#FFF176"/>
-		<rect y="20" width="29" height="3" rx="1.5" fill="#FFF176"/>
+		<rect width="29" height="3" rx="1.5" fill="black"/>
+		<rect y="10" width="29" height="3" rx="1.5" fill="black"/>
+		<rect y="20" width="29" height="3" rx="1.5" fill="black"/>
 		{:else}
-		<path fill-rule="evenodd" clip-rule="evenodd" d="M4.26105 1.13123C3.63629 0.506468 2.62335 0.506468 1.99859 1.13123C1.37383 1.75599 1.37383 2.76893 1.99859 3.39369L9.62989 11.025C10.0204 11.4155 10.0204 12.0487 9.62989 12.4392L1.13117 20.9379C0.506408 21.5627 0.506408 22.5756 1.13117 23.2004C1.75593 23.8251 2.76887 23.8251 3.39363 23.2004L11.8924 14.7017C12.2829 14.3111 12.916 14.3111 13.3066 14.7017L21.6066 23.0017C22.2313 23.6264 23.2443 23.6264 23.869 23.0017C24.4938 22.3769 24.4938 21.364 23.869 20.7392L15.569 12.4392C15.1785 12.0487 15.1785 11.4155 15.569 11.025L23.0016 3.59241C23.6264 2.96765 23.6264 1.95471 23.0016 1.32995C22.3768 0.705187 21.3639 0.705188 20.7391 1.32995L13.3066 8.76253C12.916 9.15305 12.2829 9.15305 11.8924 8.76253L4.26105 1.13123Z" fill="#FFF176"/>
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M4.26105 1.13123C3.63629 0.506468 2.62335 0.506468 1.99859 1.13123C1.37383 1.75599 1.37383 2.76893 1.99859 3.39369L9.62989 11.025C10.0204 11.4155 10.0204 12.0487 9.62989 12.4392L1.13117 20.9379C0.506408 21.5627 0.506408 22.5756 1.13117 23.2004C1.75593 23.8251 2.76887 23.8251 3.39363 23.2004L11.8924 14.7017C12.2829 14.3111 12.916 14.3111 13.3066 14.7017L21.6066 23.0017C22.2313 23.6264 23.2443 23.6264 23.869 23.0017C24.4938 22.3769 24.4938 21.364 23.869 20.7392L15.569 12.4392C15.1785 12.0487 15.1785 11.4155 15.569 11.025L23.0016 3.59241C23.6264 2.96765 23.6264 1.95471 23.0016 1.32995C22.3768 0.705187 21.3639 0.705188 20.7391 1.32995L13.3066 8.76253C12.916 9.15305 12.2829 9.15305 11.8924 8.76253L4.26105 1.13123Z" fill="white" class="croix"/>
 		{/if}
 	</svg>
 		{#if clicked}
@@ -76,7 +76,11 @@
 
 <Footer/>
 
+
 <style>
+	.croix:hover {
+	fill: var(--text-yellow);
+}
 	:root {
 		--text-yellow: #FFF176;
 		--grey-color: #3E3E3E;
@@ -131,22 +135,26 @@
 		padding: 0;
 		position: fixed;
 		inset: 0 0 0 40%;
-		/* background-color: hsl(201 32% 56%/ 0.7); */
+		background-color: hsla(0, 0%, 0%, 0.7);
 		backdrop-filter: blur(0.5rem);
 
 		flex-direction: column;
 		padding: min(20vh,7rem) 2rem;
 		list-style: none;
+		border-top-left-radius: 1rem;
+		border-bottom-left-radius: 1rem;
+		border: 0.2px solid rgb(119, 119, 119);
+
 	}
 
 	.nav-links a {
-		color: black;
+		color: rgb(249, 249, 249);
 		text-decoration: none;
 		text-transform: uppercase;
 	}
 	
 	.menu {
-		z-index: 100;
+		z-index: 200;
 	}
 
 	a:hover {
