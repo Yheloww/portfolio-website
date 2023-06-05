@@ -42,7 +42,7 @@
 		{#if clicked}
 		<ul class="nav-links flex" transition:fly="{{ x:300, duration: 800}}" >
 			<li>
-				<a on:click={ () => clicked = !clicked} href="./">home</a>
+				<a on:click={ () => clicked = !clicked} href="{base}/">home</a>
 			</li>
 			<li>
 				<a on:click={ () => clicked = !clicked} href="{base}/projects">porfolio</a>
