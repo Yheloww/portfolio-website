@@ -1,33 +1,40 @@
 
 <script>
-    function sendEmail(){
-        Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "username",
-    Password : "password",
-    To : 'them@website.com',
-    From : "you@isp.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-    }).then(
-    message => alert(message)
-    );
-    }
+
+let status = "";
+const handleSubmit = async data => {
+  status = 'Submitting...'
+  const formData = new FormData(data.currentTarget)
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+
+  const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+      },
+      body: json
+  });
+  const result = await response.json();
+  if (result.success) {
+      console.log(result);
+      status = result.message || "Success"
+  }
+}
 
 </script>
-
-
-
-
 <div class="container">
-    <form  class="form" onsubmit="sendEmail(); reset(); return false;">
-        <input class="input"type="text" placeholder="Your name" required>
-        <input class="input"type="email" placeholder="Your email adress" required>
-        <textarea class="input"rows="4" placholder="What can I do for you ?"></textarea>
+    <form on:submit|preventDefault={handleSubmit} class="form">
+        <input type="hidden" name="access_key" value="97ee4d52-31ba-44a8-a99d-1c3d22695f04">
+        <input type="text" name="name" required  placeholder="Your name"/>
+        <input type="email" name="email" required placeholder="Your email"/>
+        <textarea name="message" required rows="4" placeholder="message"></textarea>
         <button type="submit">submit</button>
-</form>
-
+    </form>
+    <div class="status">{status}</div>
 </div>
+
 
 <style>
     .container {
@@ -39,13 +46,14 @@
         gap: 1rem;
         margin-inline: 2rem;
         margin-bottom: 2rem;
+        font-size: 30px;
     }
 
     button {
         color: white;
         background-color: black;
         font-family: 'Assistant', sans-serif;
-        border-radius: 1rem;
+        border-radius: 0.7rem;
         text-transform: uppercase;
         width: 30%;
         padding-block: 0.5rem;
@@ -57,21 +65,24 @@
         color: black;
     }
 
-    .input {
+    input, textarea {
         border: 1px solid rgb(126, 125, 125);
         border-radius: 0.5rem;
         padding: 0.5rem; 
         font-family: 'Assistant', sans-serif;
         max-width: 100%;
+        font-size: 20px;
+     }
+
+     .status{
+        margin-inline: 2rem;
+        color: green;
+        font-size: 20px;
      }
 
      @media (min-width: 600px) {
-        .input {
+        input, textarea {
             max-width: 50%;
-        }
-
-        input {
-            max-width: 25%;
         }
 
      }

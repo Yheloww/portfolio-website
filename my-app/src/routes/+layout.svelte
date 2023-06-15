@@ -80,6 +80,8 @@
 <style>
 	.croix:hover {
 	fill: var(--text-yellow);
+	transition: all 0.5s ease;
+
 }
 	:root {
 		--text-yellow: #FFF176;
@@ -158,7 +160,8 @@
 	}
 
 	a:hover {
-		color: var(--text-yellow)
+		color: var(--text-yellow);
+		transition: all 0.5s ease;
 	}
 
 
