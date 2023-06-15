@@ -24,7 +24,7 @@
 
 <div class="video-wrapper">
   <video muted playsinline autoplay loop disablepictureinpicture>
-    <source src="./test.webm" type="video/webm" />
+    <source src="./test.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
   <div class="principal-section">
@@ -66,11 +66,11 @@
         <a href="{base}/projects" class="text-big button">Projects</a>
       </li>
       <li>
-        <a href="{base}/projects.html#dashboard" class="text-big button">Dashboard</a
+        <a href="{base}/projects#dashboard" class="text-big button">Dashboard</a
         >
       </li>
       <li>
-        <a href="{base}/projects.html#visuals" class="text-big button">visuals</a>
+        <a href="{base}/projects#visuals" class="text-big button">visuals</a>
       </li>
     </ul>
   </div>
